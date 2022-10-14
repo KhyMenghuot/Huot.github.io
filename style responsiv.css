@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Koulen&family=Noto+Sans+Khmer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Noto+Sans+Khmer&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg::before {
+    width: 100%;
+    content: '';
+    float: left;
+}
+
+.menu-width {
+    background-color: rgb(225, 0, 85);
+}
+
+.menu-width .menu-box {
+    padding: 0px;
+}
+
+.menu-width .menu-box ul li {
+    float: left;
+}
+
+.menu-width .menu-box ul li a {
+    color: white;
+    float: left;
+    font-size: 25px;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: 'koulen', serif;
+    transition: 0.5s;
+}
+
+.menu-width .menu-box ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu-bar {
+    display: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.5s;
+    background-color: rgb(225, 0, 85);
+}
+
+.title-bar {
+    padding: 20px;
+}
+
+.title-bar .text-bar {
+    text-align: center;
+    font-family: 'koulen', cursive;
+    font-size: 55px;
+    user-select: none;
+}
+
+.box-width .item-box {
+    height: 500px;
+}
+
+.box-width .item-box .img-box {
+    width: 100%;
+    height: 40%;
+    float: left;
+}
+
+.box-width .item-box .des-box {
+    width: 100%;
+    height: 60%;
+    float: left;
+}
+
+.box-width .item-box .des-box .txt-des {
+    font-size: 18px;
+    color: black;
+    font-family: 'Battambang', cursive;
+    transition: 0.5s;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.box-width .item-box .des-box .txt-des:hover {
+    color: red;
+}
+
+
+/* [xl] Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .title-bar .text-bar {
+        color: red;
+    }
+}
+
+
+/* [lg] large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/* [md] Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .m1 {
+        display: none;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .title-bar .text-bar {
+        font-size: 50px;
+        color: blue;
+    }
+    .box-width .item-box .des-box .txt-des {
+        font-size: 16px;
+    }
+}
+
+
+/* [sm] Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .m1 {
+        display: none;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .title-bar .text-bar {
+        font-size: 40px;
+    }
+    .box-width .item-box .des-box .txt-des {
+        font-size: 14px;
+    }
+}
+
+
+/* [col] Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .m1 {
+        display: none;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .title-bar .text-bar {
+        font-size: 30px;
+        color: red;
+    }
+}
